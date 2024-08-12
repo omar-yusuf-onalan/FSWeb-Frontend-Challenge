@@ -1,12 +1,20 @@
-import styles from './Button.module.css';
 
-const {container, darkMode, lightMode} = styles;
+import useDarkModeContext from "../../context/darkmode/useDarkModeContext.jsx";
+import useLanguageContext from "../../context/language/useLanguageContext.jsx";
+import darkStyles from "./Button.dark.module.css";
+import lightStyles from "./Button.light.module.css";
 
 const Button = ({hasBorder, width, height, content}) => {
-    return (
-        <button className={`${container}`}>
+    const { isDarkMode } = useDarkModeContext();
 
-        </button>
+    const styles = isDarkMode ? darkStyles : lightStyles;
+
+    const language = useLanguageContext();
+
+    return (
+        <div>
+            {content}
+        </div>
     )
 }
 
