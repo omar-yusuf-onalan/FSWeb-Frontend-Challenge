@@ -1,6 +1,7 @@
 const turkish = {
     modeSwitch: {
         darkMode: "KARANLIK MOD",
+        lightMode: "AYDINLIK MOD",
         switchLanguage: "Türkçeye Çevir"
     },
     header: {

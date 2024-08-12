@@ -1,6 +1,7 @@
 const english = {
     modeSwitch: {
         darkMode: "DARK MODE",
+        lightMode: "LIGHT MODE",
         switchLanguage: "Translate to Turkish"
     },
     header: {
