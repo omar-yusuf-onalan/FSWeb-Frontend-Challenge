@@ -9,8 +9,6 @@ const Button = ({hasBorder, width, height, content}) => {
 
     const styles = isDarkMode ? darkStyles : lightStyles;
 
-    const language = useLanguageContext();
-
     return (
         <div>
             {content}
