@@ -17,7 +17,7 @@ const english = {
     skills: {
         title: "Skills"
     },
-    projects: {
+    profile: {
         title: "Profile",
         profile: "Profile",
         aboutMe: "About Me",
@@ -26,7 +26,7 @@ const english = {
         education: ["Education", "Hacettepe Uni. Biology"],
         preferredRole: ["Preferred role", "Frontend, UI"]
     },
-    profile: {
+    projects: {
         title: "Projects",
         viewSite: "View Site",
         projects: [

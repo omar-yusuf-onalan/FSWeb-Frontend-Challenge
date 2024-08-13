@@ -17,7 +17,7 @@ const turkish = {
     skills: {
         title: "Yetenekler"
     },
-    projects: {
+    profile: {
         title: "Profil",
         profile: "Profil",
         aboutMe: "Hakkımda",
@@ -26,7 +26,7 @@ const turkish = {
         education: ["Eğitim", "Hacettepe Üni. Biyoloji"],
         preferredRole: ["Tercih Edilen Rol", "Ön Uç, UI"]
     },
-    profile: {
+    projects: {
         title: "Projeler",
         viewSite: "Siteyi Görüntüle",
         projects: [
