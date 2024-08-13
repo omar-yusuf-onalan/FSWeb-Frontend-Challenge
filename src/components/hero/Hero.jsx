@@ -9,7 +9,7 @@ const Hero = () => {
 
     const styles = isDarkMode ? darkStyles : lightStyles;
 
-    const language = useLanguageContext();
+    const {language} = useLanguageContext();
 
     return (
         <div>

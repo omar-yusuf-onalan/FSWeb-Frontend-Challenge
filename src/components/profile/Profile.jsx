@@ -8,7 +8,7 @@ const Profile = () => {
 
     const styles = isDarkMode ? darkStyles : lightStyles;
 
-    const language = useLanguageContext();
+    const {language} = useLanguageContext();
 
     return (
         <div>
@@ -37,7 +37,7 @@ const Profile = () => {
                         </div>
 
                         <div>
-                            <span>{language.preferredRole[0]}</span>
+                            <span>{language.profile.preferredRole[0]}</span>
                             <span>{language.profile.preferredRole[1]}</span>
                         </div>
 
