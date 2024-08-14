@@ -28,7 +28,7 @@ const DarkMode = () => {
                 <div className={ellipseOne}></div>
                 <div className={ellipseTwo}></div>
 
-                <p className={text}>{isDarkMode ? language.modeSwitch.lightMode : language.modeSwitch.darkMode}</p>
+                <p onClick={toggleDarkMode} className={text}>{isDarkMode ? language.modeSwitch.lightMode : language.modeSwitch.darkMode}</p>
             </div>
         </div>
     )
