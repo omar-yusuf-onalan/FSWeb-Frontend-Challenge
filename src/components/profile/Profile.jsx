@@ -8,44 +8,51 @@ const Profile = () => {
 
     const styles = isDarkMode ? darkStyles : lightStyles;
 
+    const {
+        profile,
+        profileDetails,
+        items,
+        item,
+        aboutMe
+    } = styles;
+
     const {language} = useLanguageContext();
 
     return (
         <div>
             <h1>{language.profile.title}</h1>
 
-            <div>
+            <div className={profile}>
 
-                <div>
+                <div className={profileDetails}>
                     <h3>{language.profile.profile}</h3>
 
-                    <div>
+                    <div className={items}>
 
-                        <div>
+                        <div className={item}>
                             <span>{language.profile.dateOfBirth[0]}</span>
                             <span>{language.profile.dateOfBirth[1]}</span>
                         </div>
 
-                        <div>
+                        <div className={item}>
                             <span>{language.profile.livingIn[0]}</span>
                             <span>{language.profile.livingIn[1]}</span>
                         </div>
 
-                        <div>
+                        <div className={item}>
                             <span>{language.profile.education[0]}</span>
                             <span>{language.profile.education[1]}</span>
                         </div>
 
-                        <div>
+                        <div className={item}>
                             <span>{language.profile.preferredRole[0]}</span>
                             <span>{language.profile.preferredRole[1]}</span>
                         </div>
 
-
                     </div>
                 </div>
 
-                <div>
+                <div className={aboutMe}>
 
                     <h3>{language.profile.aboutMe}</h3>
 
