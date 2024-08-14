@@ -1,54 +1,53 @@
 import useDarkModeContext from "../../context/darkmode/useDarkModeContext.jsx";
 import useLanguageContext from "../../context/language/useLanguageContext.jsx";
-import darkStyles from "./Hero.dark.module.css";
-import lightStyles from "./Hero.light.module.css";
-import Button from "../button/Button.jsx";
+import styles from "./Hero.module.css";
+import image from "../../assets/almila-su.webp"
 
 const Hero = () => {
     const { isDarkMode } = useDarkModeContext();
 
-    const styles = isDarkMode ? darkStyles : lightStyles;
-
     const {
         hero,
-        buttons
+        left,
+        name,
+        text1,
+        text2,
+        buttons,
+        hireMe,
+        github,
+        linkedin,
+        img
     } = styles;
 
     const {language} = useLanguageContext();
 
     return (
         <div className={hero}>
-            <div>
+            <div className={left}>
 
-                <p>-------------------- Almila Su</p>
+                <p className={name}><div></div> <span style={{color: isDarkMode ? "#B7AAFF" : "#4338CA"}}>Almila Su</span></p>
 
-                <p>{language.hero.text1}</p>
-                <p>{language.hero.text2}</p>
+                <p className={text1} style={{color: isDarkMode ? "" : "#1F2937"}}>{language.hero.text1}</p>
+                <p className={text2} style={{color: isDarkMode ? "" : "#6B7280;"}}>{language.hero.text2}</p>
 
                 <div className={buttons}>
-                    <Button
-                        hasBorder={true}
-                        width={131}
-                        height={52}
-                        content={language.hero.hireMeButton}
-                    />
-                    <Button
-                        hasBorder={true}
-                        width={131}
-                        height={52}
-                        content={"Github"}
-                    />
-                    <Button
-                        hasBorder={true}
-                        width={131}
-                        height={52}
-                        content={"Linkedin"}
-                    />
+
+                    <div className={hireMe} style={{color: isDarkMode ? "" : "white",background: isDarkMode ? "" : "#3730A3"}}>
+                        {language.hero.hireMeButton}
+                    </div>
+
+                    <div className={github} style={{color: isDarkMode ? "" : "#3730A3", border: isDarkMode ? "" : "1px solid #3730A3"}}>
+                        Github
+                    </div>
+
+                    <div className={linkedin} style={{color: isDarkMode ? "" : "#3730A3", border: isDarkMode ? "" : "1px solid #3730A3"}}>
+                        Linkedin
+                    </div>
                 </div>
 
             </div>
 
-            <img />
+            <img className={img} alt="almila-su" src={image}/>
         </div>
     )
 }

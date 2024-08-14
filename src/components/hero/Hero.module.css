@@ -1,0 +1,110 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.name {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+.name div {
+    width: 102px;
+    height: 0;
+
+    background: #B7AAFF;
+    border: 1px solid #BAB2E7;
+}
+
+.text1 {
+    width: 596px;
+    height: 144px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 72px;
+}
+
+.text2 {
+    width: 553px;
+    height: 84px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.hireMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px 32px;
+    width: 131px;
+    height: 52px;
+    border-radius: 6px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px 32px;
+    width: 131px;
+    height: 52px;
+    border-radius: 6px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.linkedin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px 32px;
+    width: 131px;
+    height: 52px;
+    border-radius: 6px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.img {
+    width: 476px;
+    height: 375px;
+    border-radius: 18px;
+}
