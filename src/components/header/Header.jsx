@@ -1,21 +1,18 @@
-import darkStyles from "./Header.dark.module.css";
-import lightStyles from "./Header.light.module.css";
+import styles from "./Header.module.css";
 import useDarkModeContext from "../../context/darkmode/useDarkModeContext.jsx";
 import useLanguageContext from "../../context/language/useLanguageContext.jsx";
-import Button from "../button/Button.jsx";
-
 
 const Header = () => {
     const { isDarkMode } = useDarkModeContext();
 
-    const styles = isDarkMode ? darkStyles : lightStyles;
-
     const {
         header,
         logo,
-        text,
         ellipse,
-        nav
+        nav,
+        skills,
+        projects,
+        hireMe
     } = styles;
 
     const { language } = useLanguageContext();
@@ -23,35 +20,25 @@ const Header = () => {
     return (
         <div className={header}>
             <div className={logo}>
-                <p className={text}></p>
-                <div className={ellipse}></div>
+                <div className={ellipse}>A</div>
             </div>
 
             <div className={nav}>
-                <Button
-                    hasBorder={false}
-                    width={131}
-                    height={52}
-                    content={language.header.skills}
-                />
+                <div className={skills} style={{color: isDarkMode ? "#6B7280" : "black"}}>
+                    {language.header.skills}
+                </div>
 
-                <Button
-                    hasBorder={false}
-                    width={131}
-                    height={52}
-                    content={language.header.projects}
-                />
+                <div className={projects} style={{color: isDarkMode ? "#6B7280" : "black"}}>
+                    {language.header.projects}
+                </div>
 
-                <Button
-                    hasBorder={true}
-                    width={131}
-                    height={52}
-                    content={language.header.hireMe}
-                />
-
+                <div className={hireMe} style={{backgroundColor: isDarkMode ? "white" : ""}}>
+                    {language.header.hireMe}
+                </div>
             </div>
         </div>
     )
 }
 
 export default Header;
+

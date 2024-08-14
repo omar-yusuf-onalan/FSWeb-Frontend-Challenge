@@ -2,7 +2,7 @@ import darkStyles from "./Projects.dark.module.css";
 import lightStyles from "./Projects.light.module.css";
 import useDarkModeContext from "../../context/darkmode/useDarkModeContext.jsx";
 import useLanguageContext from "../../context/language/useLanguageContext.jsx";
-import Button from "../button/Button.jsx";
+
 
 const Projects = () => {
     const { isDarkMode } = useDarkModeContext();
@@ -31,24 +31,19 @@ const Projects = () => {
                     <p>{language.projects.projects[0].description}</p>
 
                     <div className={buttons}>
-                        <Button
-                            hasBorder={true}
-                            width={131}
-                            height={52}
-                            content={"react"}
-                        />
-                        <Button
-                            hasBorder={true}
-                            width={131}
-                            height={52}
-                            content={"redux"}
-                        />
-                        <Button
-                            hasBorder={true}
-                            width={131}
-                            height={52}
-                            content={"axios"}
-                        />
+
+                        <div>
+                            react
+                        </div>
+
+                        <div>
+                            redux
+                        </div>
+
+                        <div>
+                            axios
+                        </div>
+
                     </div>
 
                     <div className={links}>
@@ -65,24 +60,17 @@ const Projects = () => {
                     <p>{language.projects.projects[0].description}</p>
 
                     <div className={buttons}>
-                        <Button
-                            hasBorder={true}
-                            width={131}
-                            height={52}
-                            content={"react"}
-                        />
-                        <Button
-                            hasBorder={true}
-                            width={131}
-                            height={52}
-                            content={"redux"}
-                        />
-                        <Button
-                            hasBorder={true}
-                            width={131}
-                            height={52}
-                            content={"axios"}
-                        />
+                        <div>
+                            react
+                        </div>
+
+                        <div>
+                            redux
+                        </div>
+
+                        <div>
+                            axios
+                        </div>
                     </div>
 
                     <div className={links}>
@@ -99,24 +87,17 @@ const Projects = () => {
                     <p>{language.projects.projects[0].description}</p>
 
                     <div className={buttons}>
-                        <Button
-                            hasBorder={true}
-                            width={131}
-                            height={52}
-                            content={"react"}
-                        />
-                        <Button
-                            hasBorder={true}
-                            width={131}
-                            height={52}
-                            content={"redux"}
-                        />
-                        <Button
-                            hasBorder={true}
-                            width={131}
-                            height={52}
-                            content={"axios"}
-                        />
+                        <div>
+                            react
+                        </div>
+
+                        <div>
+                            redux
+                        </div>
+
+                        <div>
+                            axios
+                        </div>
                     </div>
 
                     <div className={links}>
