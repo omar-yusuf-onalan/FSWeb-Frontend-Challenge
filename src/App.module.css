@@ -6,6 +6,12 @@
 }
 
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 50px;
     width: 90%;
     margin-right: 2%;
+    padding: 40px;
 }
