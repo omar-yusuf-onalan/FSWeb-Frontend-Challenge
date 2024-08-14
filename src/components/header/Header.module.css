@@ -1,0 +1,67 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo {
+
+}
+
+.ellipse {
+    background: #EEEBFF;
+    border-radius: 50%;
+    width: 63.68px;
+    height: 62px;
+    text-align: center;
+    align-content: center;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+
+    color: #7B61FF;
+
+    transform: matrix(0.87, 0.49, -0.51, 0.86, 0, 0);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 131px;
+    height: 52px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 131px;
+    height: 52px;
+}
+
+.hireMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #3730A3;
+    border-radius: 6px;
+
+    color: #3730A3;
+
+    width: 131px;
+    height: 52px;
+}
