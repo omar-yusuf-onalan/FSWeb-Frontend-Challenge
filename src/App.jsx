@@ -6,6 +6,7 @@ import Skills from "./components/skills/Skills.jsx";
 import Profile from "./components/profile/Profile.jsx";
 import Projects from "./components/projects/Projects.jsx";
 import Footer from "./components/footer/Footer.jsx";
+import useDarkModeContext from "./context/darkmode/useDarkModeContext.jsx";
 
 const {
     app,
@@ -13,8 +14,10 @@ const {
 } = styles;
 
 const App = () => {
+    const {isDarkMode } = useDarkModeContext();
+
     return (
-        <div className={app}>
+        <div style={{background: isDarkMode ? "black" : "white"}} className={app}>
             <div className={container}>
                 <ModeSwitch />
                 <Header />
