@@ -8,28 +8,33 @@ const Skills = () => {
 
     const styles = isDarkMode ? darkStyles : lightStyles;
 
+    const {
+        items,
+        skill
+    } = styles;
+
     const {language} = useLanguageContext();
 
     return (
         <div>
             <h1>{language.skills.title}</h1>
 
-            <div>
+            <div className={items}>
 
-                <div>
+                <div className={skill}>
 
                     <h2>Java Script</h2>
                     <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
                 </div>
-                <div>
+                <div className={skill}>
 
                     <h2>React.Js</h2>
                     <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
                         est laborum.</p>
 
                 </div>
-                <div>
+                <div className={skill}>
 
                     <h2>Node.Js</h2>
                     <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
