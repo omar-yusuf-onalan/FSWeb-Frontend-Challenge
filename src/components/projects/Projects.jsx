@@ -9,21 +9,28 @@ const Projects = () => {
 
     const styles = isDarkMode ? darkStyles : lightStyles;
 
+    const {
+        cards,
+        card,
+        buttons,
+        links
+    } = styles;
+
     const {language} = useLanguageContext();
 
     return (
         <div>
             <h1>{language.projects.title}</h1>
 
-            <div>
+            <div className={cards}>
 
-                <div>
+                <div className={card}>
                     <img/>
 
                     <h3>{language.projects.projects[0].title}</h3>
                     <p>{language.projects.projects[0].description}</p>
 
-                    <div>
+                    <div className={buttons}>
                         <Button
                             hasBorder={true}
                             width={131}
@@ -44,20 +51,20 @@ const Projects = () => {
                         />
                     </div>
 
-                    <div>
+                    <div className={links}>
                         <span>Github</span>
                         <span>{language.projects.viewSite}</span>
                     </div>
 
                 </div>
 
-                <div>
+                <div className={card}>
                     <img/>
 
                     <h3>{language.projects.projects[0].title}</h3>
                     <p>{language.projects.projects[0].description}</p>
 
-                    <div>
+                    <div className={buttons}>
                         <Button
                             hasBorder={true}
                             width={131}
@@ -78,20 +85,20 @@ const Projects = () => {
                         />
                     </div>
 
-                    <div>
+                    <div className={links}>
                         <span>Github</span>
                         <span>{language.projects.viewSite}</span>
                     </div>
 
                 </div>
 
-                <div>
+                <div className={card}>
                     <img/>
 
                     <h3>{language.projects.projects[0].title}</h3>
                     <p>{language.projects.projects[0].description}</p>
 
-                    <div>
+                    <div className={buttons}>
                         <Button
                             hasBorder={true}
                             width={131}
@@ -112,13 +119,12 @@ const Projects = () => {
                         />
                     </div>
 
-                    <div>
+                    <div className={links}>
                         <span>Github</span>
                         <span>{language.projects.viewSite}</span>
                     </div>
 
                 </div>
-
 
             </div>
         </div>
