@@ -9,10 +9,15 @@ const Hero = () => {
 
     const styles = isDarkMode ? darkStyles : lightStyles;
 
+    const {
+        hero,
+        buttons
+    } = styles;
+
     const {language} = useLanguageContext();
 
     return (
-        <div>
+        <div className={hero}>
             <div>
 
                 <p>-------------------- Almila Su</p>
@@ -20,24 +25,26 @@ const Hero = () => {
                 <p>{language.hero.text1}</p>
                 <p>{language.hero.text2}</p>
 
-                <Button
-                    hasBorder={true}
-                    width={131}
-                    height={52}
-                    content={language.hero.hireMeButton}
-                />
-                <Button
-                    hasBorder={true}
-                    width={131}
-                    height={52}
-                    content={"Github"}
-                />
-                <Button
-                    hasBorder={true}
-                    width={131}
-                    height={52}
-                    content={"Linkedin"}
-                />
+                <div className={buttons}>
+                    <Button
+                        hasBorder={true}
+                        width={131}
+                        height={52}
+                        content={language.hero.hireMeButton}
+                    />
+                    <Button
+                        hasBorder={true}
+                        width={131}
+                        height={52}
+                        content={"Github"}
+                    />
+                    <Button
+                        hasBorder={true}
+                        width={131}
+                        height={52}
+                        content={"Linkedin"}
+                    />
+                </div>
 
             </div>
 
