@@ -8,20 +8,25 @@ const Footer = () => {
 
     const styles = isDarkMode ? darkStyles : lightStyles;
 
+    const {
+        footer,
+        descriptionContainer,
+        emailAndLinks,
+        links
+    } = styles;
+
     const {language} = useLanguageContext();
 
     return (
-        <div>
-            <div>
-                <div>
-                    <h1>{language.footer.description}</h1>
-                </div>
+        <div className={footer}>
+            <div className={descriptionContainer}>
+                <h1>{language.footer.description}</h1>
             </div>
 
-            <div>
+            <div className={emailAndLinks}>
                 <span>👉 almilasucode@gmail.com</span>
 
-                <div>
+                <div className={links}>
                     <span>{language.footer.personalBlog}</span>
                     <span>Github</span>
                     <span>Linkedin</span>

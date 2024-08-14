@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.descriptionContainer {
+    width: 100%;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.emailAndLinks {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
