@@ -1,14 +1,12 @@
-import darkStyles from "./Profile.dark.module.css";
-import lightStyles from "./Profile.light.module.css";
+import styles from "./Profile.module.css";
 import useDarkModeContext from "../../context/darkmode/useDarkModeContext.jsx";
 import useLanguageContext from "../../context/language/useLanguageContext.jsx";
 
 const Profile = () => {
     const { isDarkMode } = useDarkModeContext();
 
-    const styles = isDarkMode ? darkStyles : lightStyles;
-
     const {
+        profileAndAboutMe,
         profile,
         profileDetails,
         items,
@@ -18,35 +16,51 @@ const Profile = () => {
 
     const {language} = useLanguageContext();
 
+    const h1Style = {
+        color: isDarkMode ? "#AEBCCF" : "#1F2937",
+    }
+
+    const h2Style = {
+        color: isDarkMode ? "#B7AAFF" : "#4338CA",
+    }
+
+    const spanStyle = {
+        color: isDarkMode ? "#FFFFFF" : "#000000",
+    }
+
+    const pStyle = {
+        color: isDarkMode ? "#FFFFFF" : "#6B7280",
+    }
+
     return (
-        <div>
-            <h1>{language.profile.title}</h1>
+        <div className={profileAndAboutMe}>
+            <h1 style={h1Style}>{language.profile.title}</h1>
 
             <div className={profile}>
 
                 <div className={profileDetails}>
-                    <h3>{language.profile.profile}</h3>
+                    <h2 style={h2Style}>{language.profile.profile}</h2>
 
                     <div className={items}>
 
                         <div className={item}>
-                            <span>{language.profile.dateOfBirth[0]}</span>
-                            <span>{language.profile.dateOfBirth[1]}</span>
+                            <span style={{...spanStyle, fontWeight: "bold"}}>{language.profile.dateOfBirth[0]}</span>
+                            <span style={spanStyle}>{language.profile.dateOfBirth[1]}</span>
                         </div>
 
                         <div className={item}>
-                            <span>{language.profile.livingIn[0]}</span>
-                            <span>{language.profile.livingIn[1]}</span>
+                            <span style={{...spanStyle, fontWeight: "bold"}}>{language.profile.livingIn[0]}</span>
+                            <span style={spanStyle}>{language.profile.livingIn[1]}</span>
                         </div>
 
                         <div className={item}>
-                            <span>{language.profile.education[0]}</span>
-                            <span>{language.profile.education[1]}</span>
+                            <span style={{...spanStyle, fontWeight: "bold"}}>{language.profile.education[0]}</span>
+                            <span style={spanStyle}>{language.profile.education[1]}</span>
                         </div>
 
                         <div className={item}>
-                            <span>{language.profile.preferredRole[0]}</span>
-                            <span>{language.profile.preferredRole[1]}</span>
+                            <span style={{...spanStyle, fontWeight: "bold"}}>{language.profile.preferredRole[0]}</span>
+                            <span style={spanStyle}>{language.profile.preferredRole[1]}</span>
                         </div>
 
                     </div>
@@ -54,13 +68,13 @@ const Profile = () => {
 
                 <div className={aboutMe}>
 
-                    <h3>{language.profile.aboutMe}</h3>
+                    <h2 style={h2Style}>{language.profile.aboutMe}</h2>
 
                     <div>
 
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.</p>
+                        <p style={pStyle}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.</p>
 
-                        <p>Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!</p>
+                        <p style={pStyle}>Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!</p>
 
                     </div>
 
