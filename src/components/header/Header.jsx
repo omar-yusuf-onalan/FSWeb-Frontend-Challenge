@@ -17,10 +17,15 @@ const Header = () => {
 
     const { language } = useLanguageContext();
 
+    const ellipseStyle = {
+        color: isDarkMode ? "#8F88FF" : "#7B61FF",
+        background: isDarkMode ? "#4731D3" : "#EEEBFF"
+    }
+
     return (
         <div className={header}>
             <div className={logo}>
-                <div className={ellipse}>A</div>
+                <div className={ellipse} style={ellipseStyle}>A</div>
             </div>
 
             <div className={nav}>
