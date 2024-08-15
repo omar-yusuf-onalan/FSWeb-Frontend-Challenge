@@ -1,0 +1,51 @@
+.footer {
+    width: 100%;
+    padding-top:100px;
+    padding-bottom: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.descriptionContainer {
+    width: 100%;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.descriptionContainer h1 {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 125%;
+
+    width: 540px;
+    height: 106px;
+}
+
+.emailAndLinks {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-decoration: underline;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
