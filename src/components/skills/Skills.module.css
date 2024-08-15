@@ -1,0 +1,32 @@
+.skills {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.skills h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.items {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 60px
+}
+
+.skill {
+    width: 30%;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}

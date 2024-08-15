@@ -1,43 +1,53 @@
-import darkStyles from "./Skills.dark.module.css";
-import lightStyles from "./Skills.light.module.css";
+import styles from "./Skills.module.css";
 import useDarkModeContext from "../../context/darkmode/useDarkModeContext.jsx";
 import useLanguageContext from "../../context/language/useLanguageContext.jsx";
 
 const Skills = () => {
     const { isDarkMode } = useDarkModeContext();
 
-    const styles = isDarkMode ? darkStyles : lightStyles;
-
     const {
+        skills,
         items,
         skill
     } = styles;
 
     const {language} = useLanguageContext();
 
+    const h1Style = {
+        color: isDarkMode ? "#AEBCCF" : "#1F2937",
+    }
+
+    const h2Style = {
+        color: isDarkMode ? "#B7AAFF" : "#4338CA",
+    }
+
+    const pStyle = {
+        color: isDarkMode ? "#FFFFFF" : "#6B7280",
+    }
+
     return (
-        <div>
-            <h1>{language.skills.title}</h1>
+        <div className={skills}>
+            <h1 style={h1Style}>{language.skills.title}</h1>
 
             <div className={items}>
 
                 <div className={skill}>
 
-                    <h2>Java Script</h2>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h2 style={h2Style}>Java Script</h2>
+                    <p style={pStyle}>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
                 </div>
                 <div className={skill}>
 
-                    <h2>React.Js</h2>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    <h2 style={h2Style}>React.Js</h2>
+                    <p style={pStyle}>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
                         est laborum.</p>
 
                 </div>
                 <div className={skill}>
 
-                    <h2>Node.Js</h2>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    <h2 style={h2Style}>Node.Js</h2>
+                    <p style={pStyle}>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
                         est laborum.</p>
 
                 </div>
