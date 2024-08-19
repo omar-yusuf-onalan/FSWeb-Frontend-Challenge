@@ -1,0 +1,31 @@
+.darkMode {
+    display: flex;
+    align-items: center;
+}
+
+.nightMode {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 15px;
+}
+
+.ellipseContainer {
+    width: 55px;
+    height: 26px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.smallCircle {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    right: 4px;
+    top: 11px;
+    border-radius: 50%;
+}
