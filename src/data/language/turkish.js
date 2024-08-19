@@ -2,7 +2,16 @@ const turkish = {
     modeSwitch: {
         darkMode: "KARANLIK MOD",
         lightMode: "AYDINLIK MOD",
-        switchLanguage: "Türkçeye Çevir"
+        switchLanguage: [
+            {
+                text: "TÜRKÇE",
+                colored: true
+            },
+            {
+                text: "'YE ÇEVİR",
+                colored: false
+            }
+        ]
     },
     header: {
         skills: "Yetenekler",

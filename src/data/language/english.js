@@ -2,7 +2,16 @@ const english = {
     modeSwitch: {
         darkMode: "DARK MODE",
         lightMode: "LIGHT MODE",
-        switchLanguage: "Translate to Turkish"
+        switchLanguage: [
+            {
+                text: "TRANSLATE TO",
+                colored: false
+            },
+            {
+                text: " TURKISH",
+                colored: true,
+            }
+        ]
     },
     header: {
         skills: "Skills",
