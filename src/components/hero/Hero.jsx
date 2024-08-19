@@ -13,9 +13,6 @@ const Hero = () => {
         text1,
         text2,
         buttons,
-        hireMe,
-        github,
-        linkedin,
         img
     } = styles;
 
@@ -49,16 +46,15 @@ const Hero = () => {
 
                 <div className={buttons}>
 
-                    <div
-                        className={hireMe} style={hireMeStyle}>
+                    <div style={hireMeStyle}>
                         {language.hero.hireMeButton}
                     </div>
 
-                    <div className={github} style={githubStyle}>
+                    <div style={githubStyle}>
                         Github
                     </div>
 
-                    <div className={linkedin} style={linkedinStyle}>
+                    <div style={linkedinStyle}>
                         Linkedin
                     </div>
                 </div>
