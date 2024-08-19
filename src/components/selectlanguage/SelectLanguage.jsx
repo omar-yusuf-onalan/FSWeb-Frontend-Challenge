@@ -15,10 +15,24 @@ const SelectLanguage = () => {
 
     const { language, toggleLanguage } = useLanguageContext();
 
+    const trueColoredStyle = {
+        color: isDarkMode ? "#BAB2E7" : "#4731D3"
+    }
+
+    const falseColoredStyle = {
+        color: "#777777"
+    }
 
     return (
         <div className={selectLanguage}>
-            <p className={text} onClick={toggleLanguage}>{language.modeSwitch.switchLanguage}</p>
+            <p className={text} onClick={toggleLanguage}>
+                <span style={language.modeSwitch.switchLanguage[0].colored ? trueColoredStyle : falseColoredStyle}>
+                    {language.modeSwitch.switchLanguage[0].text}
+                </span>
+                <span style={language.modeSwitch.switchLanguage[1].colored ? trueColoredStyle : falseColoredStyle}>
+                    {language.modeSwitch.switchLanguage[1].text}
+                </span>
+            </p>
         </div>
     )
 }
